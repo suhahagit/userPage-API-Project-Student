@@ -20,9 +20,7 @@ class Renderer {
 
     renderQuote(quote){
         $('.quote-container').empty()
-        console.log(quote)
         const quoteObj = {quote}
-        //console.log({quote})
         const source = $("#quote-template").html()
         const template = Handlebars.compile(source)
         const quoteHTML = template(quoteObj)
@@ -30,8 +28,6 @@ class Renderer {
     }
 
     renderPokemon(pokemon){
-        //console.log(quote)
-        //console.log({quote})
         $('.pokemon-container').empty()
         const source = $("#pokemon-template").html()
         const template = Handlebars.compile(source)

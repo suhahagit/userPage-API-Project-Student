@@ -46,7 +46,6 @@ class APIManager {
             dataType: 'json',
             success: (data) => {
                 this.data.quote = data.quote
-                console.log(data.quote)
             },
             error: function (xhr, text, error) {
                 console.log(text)
